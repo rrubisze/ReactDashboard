@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 //Material
 import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar';
 import ActionHome from 'material-ui/svg-icons/action/home';
+import SocialPerson from 'material-ui/svg-icons/social/person';
+import ActionSettings from 'material-ui/svg-icons/action/settings';
 import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
 import IconButton from 'material-ui/IconButton';
+
 //Components
 import DrawerComponent from './DrawerComponent';
 import DashboardComponent from "./DashboardComponent";
@@ -38,6 +41,15 @@ class HostComponent extends Component {
                             <ToolbarTitle text="Hello World"></ToolbarTitle>
                         </ToolbarGroup>
                         <ToolbarGroup>
+                            <IconButton>
+                                <ActionHome />
+                            </IconButton>
+                            <IconButton>
+                                <SocialPerson />
+                            </IconButton>
+                            <IconButton>
+                                <ActionSettings />
+                            </IconButton>
                             <IconButton>
                                 <NavigationMenu onClick={this.toogle}></NavigationMenu>
                             </IconButton>
