@@ -2,10 +2,15 @@ import React, { Component, ReactDOM } from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import PaperComponent from "./PaperComponent";
 import ImageCard from "./Cards/ImageCard";
+import './../App.css';
 
-const colStyle = {
+ const rowStyle = {
     margin: '10px'
   };
+ 
+  const cardStyle = {
+      marginBottom: '8px'
+  }
 class DashboardComponent extends Component {
 
     constructor(props) {
@@ -26,10 +31,10 @@ class DashboardComponent extends Component {
 
     render() {
         return (
-            <div>
+            <div style={rowStyle}>
                 <Row>
                     {this.state.components.map((element, index) =>
-                        <Col md={3} style={colStyle}>
+                        <Col md={4} style={cardStyle}>
                             <PaperComponent key={index} component={element}/>
                         </Col>)
                     }
