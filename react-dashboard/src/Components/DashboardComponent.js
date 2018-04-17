@@ -1,5 +1,5 @@
-import React, { Component, ReactDOM } from 'react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import React, { Component} from 'react';
+import { Row, Col } from 'react-flexbox-grid';
 import PaperComponent from "./PaperComponent";
 import ImageCard from "./Cards/ImageCard";
 import './../App.css';
@@ -34,7 +34,7 @@ class DashboardComponent extends Component {
             <div style={rowStyle}>
                 <Row>
                     {this.state.components.map((element, index) =>
-                        <Col md={4} style={cardStyle}>
+                        <Col md={4} style={cardStyle} key={index}>
                             <PaperComponent key={index} component={element}/>
                         </Col>)
                     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //Material
-import { Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle } from 'material-ui/Toolbar';
+import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import SocialPerson from 'material-ui/svg-icons/social/person';
 import ActionSettings from 'material-ui/svg-icons/action/settings';
@@ -12,7 +12,7 @@ import DrawerComponent from './DrawerComponent';
 import DashboardComponent from "./DashboardComponent";
 import AboutComponent from "./AboutComponent";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class HostComponent extends Component {
     constructor(props) {

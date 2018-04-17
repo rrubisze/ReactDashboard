@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import Drawer from 'material-ui/Drawer';
-import AppBar from 'material-ui/AppBar';
 import MenuItem from 'material-ui/MenuItem';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class DrawerComponent extends Component {
-    constructor(props) {
-        super(props);
-        console.log(props);
-    }
+
     render() {
         return (
             <Drawer width={200} 
