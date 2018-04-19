@@ -50,8 +50,8 @@ class HostComponent extends Component {
                             <IconButton>
                                 <ActionSettings />
                             </IconButton>
-                            <IconButton>
-                                <NavigationMenu onClick={this.toogle}></NavigationMenu>
+                            <IconButton onClick={this.toogle}>
+                                <NavigationMenu></NavigationMenu>
                             </IconButton>
                         </ToolbarGroup>
                     </Toolbar>
