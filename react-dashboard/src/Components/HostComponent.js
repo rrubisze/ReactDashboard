@@ -10,6 +10,7 @@ import IconButton from 'material-ui/IconButton';
 //Components
 import DrawerComponent from './DrawerComponent';
 import DashboardComponent from "./DashboardComponent";
+import TabComponent from "./TabComponent";
 import AboutComponent from "./AboutComponent";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -38,7 +39,7 @@ class HostComponent extends Component {
                     <Toolbar>
                         <ToolbarGroup firstChild={true}>
                             <ActionHome></ActionHome>
-                            <ToolbarTitle text="Hello World"></ToolbarTitle>
+                            <ToolbarTitle text="ABB"></ToolbarTitle>
                         </ToolbarGroup>
                         <ToolbarGroup>
                             <IconButton>
@@ -60,7 +61,7 @@ class HostComponent extends Component {
                         toogle={this.toogle}>
                     </DrawerComponent>
 
-                    <Route exact path="/" component={DashboardComponent} />
+                    <Route exact path="/" component={TabComponent} />
                     <Route path="/about" component={AboutComponent} />
 
                 </div>
